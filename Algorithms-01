@@ -1,0 +1,749 @@
+
+# ▄████▄   ▄▄▄        ██████  ██▓███   ██▓ ▄▄▄       ███▄    █ 
+#▒██▀ ▀█  ▒████▄    ▒██    ▒ ▓██░  ██▒▓██▒▒████▄     ██ ▀█   █ 
+#▒▓█    ▄ ▒██  ▀█▄  ░ ▓██▄   ▓██░ ██▓▒▒██▒▒██  ▀█▄  ▓██  ▀█ ██▒
+#▒▓▓▄ ▄██▒░██▄▄▄▄██   ▒   ██▒▒██▄█▓▒ ▒░██░░██▄▄▄▄██ ▓██▒  ▐▌██▒
+#▒ ▓███▀ ░ ▓█   ▓██▒▒██████▒▒▒██▒ ░  ░░██░ ▓█   ▓██▒▒██░   ▓██░
+#░ ░▒ ▒  ░ ▒▒   ▓▒█░▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░░▓   ▒▒   ▓▒█░░ ▒░   ▒ ▒ 
+#  ░  ▒     ▒   ▒▒ ░░ ░▒  ░ ░░▒ ░      ▒ ░  ▒   ▒▒ ░░ ░░   ░ ▒░
+#░          ░   ▒   ░  ░  ░  ░░        ▒ ░  ░   ▒      ░   ░ ░ 
+#░ ░            ░  ░      ░            ░        ░  ░         ░ 
+#░                                                             
+#
+#################
+#    +---+      #
+#    |   |      #
+#    O   |      #
+#   /|\  |      #
+#   / \  |      #
+#        |      #
+#  =========    #
+#################
+
+### Mafhoom Pardazesh dade ha va marahel on: ###
+
+## Mafhoom Dade : ## 
+Etelaat kham avalie ke be onvan vooroodi mored estefade
+gharar migirand ra dade migooiand.
+
+## Pardazesh dade ha : ##
+amaliat riazi va manteghi ke bar roye dade ha anjam mishavand
+va khoorooji haye matloob ra ejad mikonad ra pardazesh migoyand
+
+## Etelaat : ##
+dade haye pardazesh shode ra etelaat migoyand.
+
+########     #################     ############
+# DADE # ==> # Mechanism Hal # ==> # Khorooji #
+########     #################     ############
+
+#####################     ####################     #####################
+# Vooroodi(Dade ha) # ==> # Bakhsh Pardazesh # ==> # Khorooji(Etelaat) #
+#####################     ####################     #####################
+
+### Ajza Asasi Computer ###
+
+. Vahed Pardazeshgar Markazi ==> #ALU# ; #CPU# ; #CU#
+. Vahed Hafeze ==> #RAM#
+. Vahed Vooroodi ==> Input Unit  | ==> I/O
+. Vahed Khorooji ==> Output Unit |
+
+### Sakhtar koli az hafeze asli ###
+
+Dastoor ha : Jam ; Zarb ; Taghsim ; ... ; Moghaiesee
+
+####################################
+#           1238(10)               # 0
+####################################
+#                                  # 1
+####################################
+#                                  # 2
+####################################
+#                                  # 3
+####################################
+#                                  # 4
+####################################
+#                                  # 5
+####################################
+#                                  # 6
+####################################
+#                                  # 7
+####################################
+#                                  # 8
+####################################
+#                                  # 9
+####################################
+#                                  # 10
+####################################
+#                                  # 11
+####################################
+#                                  # 12
+####################################
+#                                  # 13
+####################################
+#                                  # 14
+####################################
+
+
+                                  ### CPU ###
+                          ----------------------------- 
+                     ------#################           |
+                     |   | # Vahed Control #--------------
+                     |   | #################           |  |
+                     |   |   |     |                   |  |
+                     |   | ---     |     ### ALU ###   |  |
+################## --    | |#########################  |   --->##################
+# Vahed Vooroodi #       | |# Vahed Hesab & Mantegh #  |       # Vahed Khorooji #
+################## --|   | |#########################  |    -->##################
+                     |   | |       |   ^               |   |
+                     |    -|-------|---|---------------    |
+                     |     |---|   |   |                   |
+                     |         |   v   |                   |
+                     |     ################                |
+                      ----># Vahed Hafeze #-----------------
+                           ################
+
+### System Addad ###
+
+. System Dah Dahi (Decimal)
+
+exp.
+1234 = 4(1) + 3(10) + 2(100) + 1(1000)
+
+. System Hast HAshti (Octal)
+
+exp.
+134(OCT) = 4(8^0) + 3(8^1) + 1(8^2)
+
+. System Shanzdah Shanzdahi (HexaDecimal)
+
+exp.
+115(HEX) = 1F(HEX)
+
+### NOTE ###
+# 10 A     #
+# 11 B     #
+# 12 C     #
+# 13 D     #
+# 14 E     #
+# 15 F     #
+############
+
+. System Do Doi (Binary)
+
+### NOTE #########
+#                #
+# Zaban Computer #
+#                #
+##################
+
+### Tabdilat dar system addad ###
+
+OCT ==> DECIMAL ==>
+Ragham ha ra az samt rast ba tavajoh be moghiat (i) ra dar
+(8^i) zarb mikonim va hasel ha ra ba ham jam mikonim
+
+### FORMULA ##########
+#                    #
+#  n-1               #
+#  ----              #
+#  \    x($i)a(^i)   #
+#  /                 #
+#  ----              #
+#  i = 1             #
+#                    #
+######################
+
+Another EXP.
+x(Decimal) ==> y(b)
+
+12(Decimal) ==> x(2)
+
+. First Sol:
+
+# Rah hal Baghi Mande ha #
+
+# Rah hal Tavan ha #
+
+### Anva Dade ha : ###
+
+. Dade Sahih
+
+exp.
+0,1,2,3,...
+
+. Dade Ashari
+
+exp.
+1.1,1.2,1.3
+
+. Dade Characteri
+
+exp.
+a,b,c,...
+
+### Moteghiar (Variable) ###
+
+yek makan movaghat ke yek no dade dar khod zakhire mikonad
+
+### Anva Amalgar ha ###
+
+. jam
+. zarb
+. menha(Tafrigh) ==> 1 - Tafrigh Yekani
+. Taghsim ==> 1 - Taghsim sahih ; 2 - Taghsim Ashari
+. Tavan
+. Baghimane (mod)
+
+## Amalgar manteghi ##
+
+. Boolean ==> True or False
+. or ==> |
+. And ==> &
+. Not ==> Naghiz ==> (!)
+
+## Amalgar haye Moghaiesee ##
+
+. >
+. <
+. =>
+. =<
+. ==
+. !=
+
+exp.
+x = 2
+(x mod(2) = 0)
+
+
+### Olaviat Ha ###
+
+. Tafrigh Yekani
+. Tavan
+. Zarb va Taghsim
+. Jam va Tafrigh
+
+# Baraye be ham zadan olaviat az () estefade mishavad #
+
+### Amaliat haye riazi ###
+
+. Factorial :
+  n! = (n)(n-1)(n-2)(n-3)...(1)
+
+. Tarkibiat:
+   k
+  C = n!/k!(n-k)!
+   n
+
+## Amaliat matris ha ##
+
+1 - Jam va Tafrigh : Deraye haye nazir be nazir ra ba ham jam ya tafrigh mikonim.
+2 - Zarb matris ha : 
+3 - Mohasebe Determinan : 
+  A = | a b |
+      | c d |
+
+det(A) = |A| = 
+. (a * d) - (b * c)
+. Saroos Method ==> (Badihi ast)
+
+4 - Mohasebe Taranahad ==> Jaye Satr va Sotoon deraye ha avaz mishavad
+5 - Mohasebe Matris Bala Mosalasi va paeen Mosalasi
+
+### Algorithm & Flowchart ###
+
+## Marahel Hal Masele ##
+
+. Moshakhas nemoodan vooroodi
+. Moshakhas nemoodan Khorooji
+. Pardazesh vooroodi ha va ijad khoorooji khaste shode
+
+## Tarif Algorithm ##
+
+. Majmooee az dastoorat ke har dastoor deraye yek shomare ast va ejraye an ha (ba yek tartib moshakhas) 
+  monjar be anjam yek kar khas mishavad, algorithm gofte mishavad.
+
+## Vijegi haye barez algorithm ##
+
+. Daraye noghte shroo va payan ast.
+. Tedad dastoorat dar anha motenahi va moshakhas ast.
+. Ejraye dastoorat elzaman be tartib nist, va tabe mohtavaye dastoorat ast.
+
+## Anva Dastoor amal ha dar algorithm ##
+
+. Dastoor Vooroodi
+. Dastoor Khorooji
+. Dastoor Entesab
+. Dastoor Mohasebati va Manteghi
+. Dastoor Tasmim Giri
+. Tozihat
+
+### Sakhtar haye Tekrar ###
+
+. Sakhtar hayee ba tekrar moshakhas
+==> az abteda tekrar amal moshakhas ast
+
+. Sakhtar hayee ba tekrar namoshakhas
+==> tedad tekrar Vabaste be sharayet dade haye vooroodi va sharayet masele khahad bood
+
+       ----------
+      |          |
+      v          |
+ ----------      |
+|          |     |
+|   loop   |     |
+|          |     |
+ ----------      |
+      |          |
+      v----------
+    shart khateme
+
+## Halghe haye tekrar moshakhas ==> (for) ##
+
+1 - Halghe haye soodi (bala shomar)
+2 - Halghe haye noozooli (paeen shomar)
+
+### ### ### ### ###
+
+exp. Algorithmi benevisid ke hasel ebarat zir ra mohasebe konad.
+
+a. S = 1 + 1/2 + 1/4 + ... + 1/2n
+
+b. S = 2 + 3/2! + 4/3! + ... + n+1/n!
+
+c. S(x) = x - (x^3)/3! + (x^5)/5! + ... +|- (x^2k-1)/(2k-1)!
+
+==> Sol.
+
+a. 
+   1 - Start
+   2 - n ra az vooroodi bgir
+   3 - I = 1
+   4 - S = 1
+   5 - S = S + 1/2I
+   6 - I = I + 1
+   7 - if I <= n goto 5
+   8 - print(S)
+   9 - End
+
+b.
+   1 - Start
+   2 - n ra az vooroodi
+   3 - I = 1 , S = 0
+   4 - F = 1 , temp = I
+   5 - F = F * temp
+   6 - temp = temp - 1
+   7 - if temp > 0 goto 5
+   8 - S = S + (I + 1)/temp
+   9 - I = I + 1
+   10 - if I <= n goto 4
+   11 - print(S)
+   12 - End
+
+c.
+   1 - Start
+   2 - K , X ra az vooroodi begir
+   3 - S = 0 , I = 1 , sign = 1
+   
+   ### (X ^ I)/I!         |
+   4 - null = 1 , J = 1   |
+   5 - null = null * X    | ==> (X ^ I)
+   6 - J = J + 1          |
+   7 - if J <= I goto 5   |
+   
+   8 - F = 1 , J = 1      |
+   9 - F = F * J          | ==> (I!)
+   10 - J = J + 1         |
+   11 - if J <= I goto 9  |
+   
+   12 - S = S + (sign * null/F)
+   13 - Sign = - Sign
+   14 - I = I = 2
+   15 - if I <= 2k-1 then goto 4
+   16 - End
+
+## Halghe haye tekrar to dar to ##
+
+exp. ==> In previous exp. Section b
+
+### Note ################################
+#                                       #
+# be ezaye har bar ejraye halghe birooni#
+# halghe dakheli an kamel ejra mishavad #
+#                                       #
+#########################################
+
+exp.
+     algorithmi benevisid ke shekl zir ra chap konad.
+
+#### A #####
+#          #
+#   *      #
+#   **     #
+#   ***    #
+#   ****   #
+#   *****  #
+#   ****** #
+#   .      #
+#   .      #
+#   .      #
+############
+
+Sol(A).
+        1 - Shroo
+        2 - n ra az vooroodi begir
+        3 - I = 1
+        4 - J = 1
+        5 - Dar hamin satr yek "*" chap kon
+        6 - J = J + 1
+        7 - if J <= I goto 5
+        8 - Makan nama ra yek satr paeen bebar => Works like "Enter"
+        9 - I = I + 1
+        10 - if I <= n goto 4
+
+#### B #######
+#            #
+#   *****    #
+#   ****     #
+#   ***      #
+#   **       #
+#   *        #
+#   *        #
+#   **       #
+#   ***      #
+#   ****     #
+#   *****    #
+#            #
+##############
+
+Sol(B).
+        1 - Start
+        2 - I = 5
+        3 - J = 1
+        4 - Dar hamin satr yek "*" chap kon
+        5 - J = J + 1
+        6 - if J <= I goto 4
+        7 - Makan nama ra be satr badi bebar
+        8 - I = I - 1
+        9 - if I > 0 goto 3
+        10 - I = I + 1
+        11 - J = 1
+        12 - Dar hamin satr yek "*" chap kon
+        13 - J = J + 1
+        14 - if J <= 1 goto 12
+        15 - if I <= 5 goto 10
+        16 - End
+
+exp.
+     Algorithmi benevisid ke N ra daryaft konad va addad ghabl az an ra chap konad.
+
+Sol.
+     1 - Start
+     2 - N ra az vooroodi begir
+     3 - test = 2
+     4 - I = 2 , f = 0
+     5 - if test mod I = 0 then f = 1
+     6 - if f = 1then goto 9
+     7 -  = I + 1
+     8 - if I <= test/2 goto 5
+     9 - if f = 0 then print(test)
+     10 - test = test + 1
+     11 - if test <= n then goto 4
+     12 - End
+
+### Flowchart ###
+
+. Tarif : Baraye neshan dadan ravand ejraye yek algorithm , va ejad yek sakhtar graphici az algorithm 
+          ke did koli az algorithm baraye binande ejad mikonad az Flowchart estefade mishavad.
+
+## Alaiem dar Flowchart ##
+
+. Shroo & payan : Beizi
+. Dastoorat Sharti : Lozi
+
+   /\
+  /  \
+ /    \
+/      \
+condition --> True
+\      /
+ \    /
+  \  /
+   \/
+   |
+   | False
+   v
+
+. Vooroodi va khoorooji : Motevaziol azla
+. Dastoorat Mohasebe va entesab : Mostatil
+
+exp.
+     Flowcharti rasm konid ke yek addad az vroodi begirad va moshakhas konad ke moraba kamel ast ya na?
+
+Beizi(Start)
+    |
+    |
+    v
+Lozi(Read(n))
+    |
+    |
+    v
+Mostatil(S = 0 , I = 1)
+    |
+    |  <-------------------------------------------
+    v                                              |
+Mostatil(S = S + I)                                |
+    |                                              |
+    |                                              |
+    v                                              |
+Mostatil(I = I + 2)                                |
+    |                                              |
+    |                                              |
+    v                                              |
+Lozi(if n = s) -- YES --> Lozi(n kamel ast)        |
+    |                                    |         |
+    |                                    |         |
+    NO                                   |         |
+    |                                    |         |
+    |                                    |         |
+    v                                    |         |
+Lozi(if n < s) -- YES -------------------|---------
+   |                                     |
+   |                                     |
+   NO                                    |
+   |                                     |
+   |                                     |
+   v                                     v
+Lozi(n kamel nist) -------------> Beizi(End)
+
+exp. 
+     Flowcharti rasm konid ; ke n jomle aval seri fibonatchi ra chap konad
+
+Sol.
+
+Beizi(Start)
+    |
+    |
+    v
+Motevaziol azla(Read(n))
+    |
+    |
+    v
+Mostatil(
+a = 0
+b = 1
+I = 2)
+    |
+    | <-------------------------
+    v                           |
+Mostatil(I = I + 1)             |
+    |                           |
+    |                           |
+    v                           |
+Mostatil(                       |
+c = a + b                       |
+a = b                           |
+b = c)                          |
+    |                           |
+    |                           |
+    v                           |
+Motevaziol azla(out(c))         |
+    |                           |
+    |                           |
+    v                           |
+Lozi(if I < n) ----- YES -------
+    |
+    |
+    NO
+    |
+    |
+    v
+    Beizi(End)
+
+exp.
+     Flowcharti rasm konid ke n addad az vooroodi daryaft konad va maximum anha va tedad tekrar anha ro moshakhas konad
+
+Sol.
+
+Beizi(Start)
+    |
+    |
+    v
+Motevaziol azla(Read(n))
+    |
+    |
+    v
+Mostatil(
+max = 0
+c = 0
+i = 1)                     
+    |                      
+    | <-------------------------------------------
+    v                                             |
+Motevaziol azla(Read(x))                          |
+    |                                             |
+    |                                             |
+    v                                             |
+Lozi(x > max) -- NO --> Mostatil(c = c + 1)       |
+    |                          |                  |
+    |                          |                  |
+    YES                        |                  |
+    |                          |                  |
+    |                          |                  |
+    v                          |                  |
+Mostatil(                      |                  |
+max = x                        |                  |
+c = 1)                         |                  |
+    |                          |                  |
+     --------------------------                   |
+    |                                             |
+    |                                             |
+    v                                             |
+Mostatil(I = I + 1)                               |
+   |                                              |
+   |                                              |
+   v                                              |
+Lozi(i <= n) -- YES ------------------------------
+   |
+   NO
+   |
+   v
+Motevaziol azla(
+out(max
+out(c))
+   |
+   |
+   v
+Beizi(End)
+
+exp.
+     agar a addadi bashad ke ba majmoo maghsoom alaihaiash barabar bashad , algorithmi benevisid ke addad a 
+     kochek tar az N ra moshakhas konad
+
+Sol.
+     1 - Start
+     2 - n ra az vooroodi begir
+     3 - test = 2
+     4 - s = 0
+     5 - I = 1
+     6 - if test mod I = 0 then S = S + I
+     7 - I = I + 1
+     8 - if I <= test/2 goto 6
+     9 - if test = S then print(S)
+     10 - test = test + 1
+     11 - if test <= n goto 4
+     12 - End
+
+exp.
+     Flowcharti rasm konid ; X(^ n) ra mohasebe va chap konad
+
+Sol.
+     Beizi(Start)
+         |
+         |
+         v
+     Motevaziol azla(n, x ra begir)
+         |
+         |
+         v
+     Mostatil(
+     i = 1
+     F = 1)
+         |
+         |<-------------------
+         v                    |
+     Mostatil(F = F * x)      |
+         |                    |
+         |                    |
+         v                    |
+     Lozi(if i <= n) -- YES --
+         |
+         NO
+         |
+         v
+     Lozi(out(F))
+         |
+         |
+         v
+     Beizi(End)
+
+exp.
+     Flowcharti rasm konid ke bozorg tarin maghsoom alaih moshtarak do addad ra mohasebe va chap konad
+
+Sol.
+     Beizi(Start)
+        |
+        |
+        v
+     Motevaziol azla(
+     Read(x)
+     Read(y))
+        |
+        |<-----------------------
+        v                        |
+     Lozi(if x < y) ---          |
+        |              |         |
+        YES            |         |
+        |              |         |
+        v              NO        |
+     Mostatil(         |         |
+     temp = x          |         |
+     x = y             |         |
+     y = temp)         |         |
+        |              |         |
+        |<-------------          |
+        v                        |
+     Mostatil(x = x - y)         |
+        |                        |
+        |                        |
+        v                        |
+     lozi(if x != y)------ YES --
+        |
+        |
+        v
+     Beizi(End)
+
+exp.
+     Flowcharti rasm konid ke yek addad dar mabnaye 10 ra be mabnaye 2 bebarad
+
+Sol.
+     Beizi(Start)
+        |
+        |
+        v
+     Motevaziol azla(Read(x))
+        |
+        |
+        v
+     Mostatil(
+     S = 0
+     i = 0)
+        |
+        |<--------------------
+        v                     |
+     Mostatil(                |
+     r = x mod 2              |
+     x = [x/2])               |
+        |                     |
+        |                     |
+        v                     |
+     Mostatil(                |
+     S = S + r * 10 ^ i)      |
+        |                     |
+        |                     |
+        v                     |
+     Mostatili(               |
+     i = i + 1)               |
+        |                     |
+        |                     |
+        v                     |
+     lozi(if(x >= 2))-- YES --
+        |
+        NO
+        |
+        v
+     Mostatil(S = S + x * (10 ^ i))
+        |
+        |
+        v
+     Beizi(End)
