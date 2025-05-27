@@ -747,3 +747,81 @@ Sol.
         |
         v
      Beizi(End)
+
+exp.
+     Flowcharti Rasm konid ; yek addad az vooroodi daryaft konad  va sefr haye an rqa hazf konad
+     1020 ==> 12
+Sol.
+    1 - Start
+    2 - x ra az vooroodi begir 
+    3 - S = 0 , i = 0
+    4 - r = x mod 10
+    5 - x = [x/10]
+    6 - S = S + r * 10 ^ i
+    7 - if i > 0 then i = i + 1
+    8 - if x > 0 goto 4
+    9 - print(S)
+    10 - End
+
+    Beizi(Start)
+        |
+        |
+        v
+    Motevaziol azla(Read(x))
+        |
+        |
+        v
+    Mostatil(
+    S = 0
+    i = 0)
+        |
+        |<--------------------
+        v                     |
+    Mostatil(                 |
+    r = x mod 10              |
+    x = [x/10])               |
+        |                     |
+        |                     |
+        v                     |
+    Mostatil(                 |
+    S = S + r * (10 ^ i))     |
+        |                     |
+        |                     |
+        v                     |
+    Lozi(if r > 0)- NO -      |
+        |              |      |
+        YES            |      |
+        |              |      |
+        v              |      |
+    Mostatil(          |      |
+    i = i + 1)         |      |
+        |              |      |
+        |<-------------       |
+        v                     |
+    Lozi(if x > 0)-- YES -----
+        |
+        NO
+        |
+        v
+    Motevaziol azla(out(S))
+        |
+        |
+        v
+    Beizi(End)
+
+exp.
+     Algorithmi Benevisid ke hasel jam zir ra hesab konad.
+
+
+sqrt(3) + sqrt(3 + sqrt(3)) + sqrt(3 + sqrt(3 + sqrt(3))) + ...
+
+Sol.
+     1 - Start
+     2 - Read(n)
+     3 - I = 1 , S = rad(3) , J = rad(3)
+     4 - S = sqrt(3 + J) + S
+     5 - J = sqrt(3 + J)
+     6 - I = I + 1
+     7 - if I < n goto 4
+     8 - print(s)
+     9 - End
