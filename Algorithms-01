@@ -825,3 +825,439 @@ Sol.
      7 - if I < n goto 4
      8 - print(s)
      9 - End
+
+
+### Sub Algorithm ###
+
+## Sub Algorithm : zir algorithm baraye anjam bakhsh khasi az yek algorithm estefade mishavad , 
+#                  va anjam inkar be karat (tedad ziadi) dar algorithm anjam mishavad
+
+ Maziat ha :
+ 1 - kam shodan hajm algorithm 
+ 2 - sade shodan taghirat dar algorithm
+ 3 - taghsim kar
+ 4 - sade shodan reval neveshtan algorithm
+
+exp.
+baraye mohasebe [n] Algorithmi benevisid.
+                [m]
+
+
+[n] = n!/m!(n - m)!
+[m]
+
+Sol.
+
+1 - Start
+2 - Read(m , n)
+3 - if m > n then t = n , n = m , m = t
+4 - I =1 , F = 1
+5 - F = F * I
+6 - I = I + 1
+7 - if I <= n then goto 5
+8 - A = F
+9 - I = 1, F = 1
+10 - F = F * I
+11 - I = I + 1
+12 - if I <= m goto 9
+13 - B = F
+14 - I = 1 , F = 1
+15 - F = F * I
+16 - I = I + 1
+17 - if I <= n - m goto 15
+18 - C = f
+19 - T = A / (B * C)
+20 - print(T)
+
+## Sub Algorithm for Factorial ##
+
+1 - I = 1 , F = 1
+2 - F = F * I
+3 - I = I + 1
+4 - if I <= x goto 2
+5 - goto 1
+
+## Algorithm Asi baraye mohasebe (n):
+                                 (m)
+
+1 - Start
+2 - Read(m , n)
+3 - if m > n then t = m , m = n , n = t
+4 - A = F(n)
+5 - B = F(m)
+6 - C = F(n - m)
+7 - T = A / (B * C)
+8 - print(T)
+9 - End
+
+## Recursive Sub Algorithm ##
+F(n) = n! = n * (n-1)! = n * F(n - 1)
+exp.
+     Factorial
+     1 - if n = 0 then F = 1 , return to top
+     2 - if n > 0 then n * F(n - 1)
+
+exp. 
+     xy = x + x(y - 1)
+     null(x,y)
+
+     1 - if y = 1 then Null = x , return
+     2 - if y > 1 then x + null(x , y -1)
+
+exp.
+    Algorithmi benevisid ke tamam addad 3 raghami ra ke ba maghloobeshan barabar hastand chap koand
+
+Sol.
+    Zir algorithm moshakhas shodan barabari yek addad 3 raghami ba maghloobash A(x)
+
+    1 - S = 0 , A = False
+    2 - r = x mod(10)
+    3 - x = [x/10]
+    4 - S = S * 10 + r
+    5 - if x > 0 goto 2
+    6 - if S = x then A = True
+    7 - return
+
+    ### ### ###
+    
+    1 - Start
+    2 - I = 100
+    3 - if A(I) then print(I)
+    4 - I = I + 1
+    5 - if I <= 999 then goto 3
+    6 - End
+
+exp.
+    Algorithmi benevisid ke tek addad ra az mabnaye a be mabnaye b bebarad
+
+Sol.
+    # Zir Algorithm atoten(x , a) #
+
+    1 - S = 0 , i = 0
+    2 - r = x mod 10
+    3 - x = [x / 10]
+    4 - S = S + r * pow(a , i)
+    5 - i = i + 1
+    6 - if x > 0 goto 2
+    7 - S = atotem
+    8 - return
+
+    # Zir Algorithm tentab(x , b) #
+    
+    1 - S = 0 , i = 0
+    2 - r = x mod b
+    3 - x = [x / b]
+    4 - S = S + r * pow(10 , i)
+    5 - i = i + 1
+    6 - if x > 0 goto 2
+    7 - S = tentob
+    8 - return
+
+exp.
+    Zir algorithm x^y = pow(x, y)
+
+Sol.
+    1 - if y = 0 then pow = 1
+    2 - if y > 0 then x * pow(x , y-1)
+    3 - return
+
+exp.
+    Algorithm asli tabdil mabna ==> ()$a ==> ()$b
+
+sol.
+    1 - Start
+    2 - Read(x)
+    3 - Read(a , 10)
+    4 - A = atoten(x , a)
+    5 - B - tentob(A , B)
+    6 - print(B)
+    7 - End
+
+### Tarif Array ###
+
+Array sakhtari ast ke , Majmooee az dade haye hamnam va hamno ra negah dari mikonad,
+har kodam az in dader ha yek nam darand va vajh tamayoz anha nadis ast.
+in dade ha be tartib  andiseshan dar hafeze posht sar ham zakhire mishavand.
+
+
+exp.
+    Algorithmi benevisid ke 10 addad az vooroodi begirad va anha ra dar yek array zakhire karde va
+    sepas anha dar haman array makoos konad. (akharin onsor avali , yeki mande be akhar dovomi...)
+
+Sol.
+    1 - Start
+    2 - I = 10 , a{10}
+    3 - Read(x)
+    4 - x = A{I}
+    5 - I = I + 1
+    6 - if I <= 10 goto 3
+    7 - J = 1 , i = 10
+    8 - temp = A{i} , A{i} = A{j} , A{j} = temp
+    9 - i = i - 1 , j = j + 1
+    10 - if i > j goto 8
+    11 - i = 1
+    12 - print(A[i])
+    13 - i = i + 1
+    14 - if i <= 10 goto 12
+    15 - End
+
+exp.
+    Algorithmi benevisid, 10 addad az vooroodi begirad va anha ra dar yek array
+    zakhire konad va anha ra az akhari be aval chap konad.
+
+Sol.
+    1 - Start
+    2 - i = 1 , A[10]
+    3 - Read(x)
+    4 - A[i] = x
+    5 - i = i + 1 - 5
+    6 - if i <= 10 goto 3
+    7 - i = i -1
+    8 - print(A[i])
+    9 - if i > 1 goto 6
+    10 - End
+
+Flowchart.
+
+Beizi(Start)
+    |
+    |
+Mostatil(
+i = 1
+A[10])
+    |<------------
+    |             |
+Motevaziol azla(  |
+Read(x)           |
+)                 |
+    |             |
+    |             |
+Mostatil(         |
+A[i] = x          |
+i = i + 1         |
+)                 |
+    |             |
+    |             |
+Lozi(             |
+if i <= 10 - YES -
+)
+   |
+   NO<-----------------
+   |                   |
+Mostatil(i = i - 1)    |
+   |                   |
+   |                   |
+lozi(                  |
+out(A[i]               |
+)                      |
+  |                    |
+  |                    |
+lozi(                  | 
+if i > 1 -- YES -------
+)
+  |
+  NO
+  |
+Beizi(End)
+
+exp.
+    Algorithmi benevisid ke , 50 addad az vooroodi begirad va har addad ra be hamrah tedad tekrar an dar array chap konad.
+
+Sol.
+    
+    # ASLI #
+    1 - Start
+    2 - i = 1 , A[50]
+    3 - Read(x)
+    4 - A[i] = x
+    5 - i = i + 1
+    6 - if i <= 50 goto 3
+    7 - i = 1 , temp[50] , j = 1
+    8 - temp = -1 
+    9 - if !test(temp,A[i]) then temp[j] = A[i] , j = j + 1
+    10 - i = i + 1
+    11 - if i <= 50 goto 9
+    12 - i = 1 , j = j - 1
+    13 - C = count(A , temp[i])
+    14 - print("Dade temp[i], C bar tekrar shode ast")
+    15 - i = i + 1
+    16 - if i <= j goto 13
+    17 - End
+
+    # Sub Algorithm Count(A, x) #
+    
+    Count(A, x)
+    1 - i = 1 , c = 0 , n = size(A)
+    2 - if A[i] = x then c = c + 1
+    3 - i = i + 1
+    4 - if i <= n then goto 2
+    5 - count = c
+    6 - return
+
+exp.
+    Algorithmi benevisid ke 50 addad az vooroodi begirad anha ra dar yek array gharar dahad va addad tekrari ra az array hazf konad.
+
+Sol.
+    1 - Start
+    2 - i = 1
+    3 - Read(x)
+    4 - sort(A ,x)
+    5 - i = i + 1
+    6 - if i <= n goto 3
+    7 - r = 1
+    8 - x = A[r] , k = r , i = r
+    9 - i = i + 1
+    10 - if A[i] = x then goto 9
+    11 - j = i - 1
+    12 - S = j - k
+    13 - Shift(A(K:n), S)
+    14 - n = n - s
+    15 - r = r + 1
+    16 - if r <= n goto 8
+    17 - End
+
+    # ZIR ALGORITHM SHIFT(A(K:n),S) #
+    1 - i = k
+    2 - J = s
+    3 - A[i] = A[i + 1]
+    4 - i = i + 1
+    5 - if i < n goto 3
+    6 - n = n - 1
+    7 - J = J - 1 , i = k
+    8 - if j > 0 goto 3
+
+    # ZIR ALGORITHM SORT(A , x) #
+    
+    1 - i = 1 , n = size(A)
+    
+    2 - if x < A[i] then :
+    2-1 : j = n + 1
+    2-2 : A[j] = A[j - 1]
+    2-3 : j = j - 1
+    2-4 : if j > i goto 2-2
+    2-5 : A[i] = x
+    
+    3 - i = i + 1
+    4 - if i <= n goto 2
+    5 - return
+
+exp.
+    Algorithmi benevisid ke anasor do Majmooee A , B ra az vooroodi begirad va ejtema va eshterak va tafazol anha ra chap konad
+
+Sol.
+    1 - Start
+    2 - A ra be tool n , B ra be tool m begir
+    3 - i = 1
+    4 - C[i] = A[i] , D[i] = A[i]
+    5 - i = i + 1
+    6 - if i <= n goto 4
+    7 - i = 1 , j = 1 , K = n + 1
+    8 - if !test(A, B[i]) then C[k] = b[i] , K = K + 1
+    dar gheir in soorat : D[j] = B[i] , j = j + 1
+    9 - i = i + 1
+    10 - if i <= m goto 8
+    11 - i = 1
+    12 - if test(B , A[i]) then A[i] = 0
+    13 - i = i + 1
+    14 - if i <= n goto 12
+    15 - i = 1
+    
+    16 - if A[i] = 0 then :
+    16-1 - J = i , n = n - 1
+    16-2 : A[j] = A[j + 1]
+    16-3 : j = j + 1
+    16-4 : if j <= n goto 16-2
+    
+    17 - i = i + 1
+    18 - if i <= n goto 16
+    19 - End
+
+exp.
+    Flowcharti rasm konid ke 100 onsor motefavet az vooroodi begirad va anha ra dar yek array gharar dahad , angah addad aval ra az array hazf konad
+
+.
+.
+.
+
+### Ravesh haye jostejoo dar array ###
+
+## 1 - jostejoo khati : anasor array az aval ta akhar ba anasor mored nazar moghaiese mishavad
+
+## 2-  jostejoo do doee : dar in ravesh hamvare onsor mored jostejoo ba vasat array moghiese mishavad.
+##     agar onsor mored nazar az vasat array bozorg tar bood angah balaye array ra negah mikonim va dar soorati ke
+##     onsor mored nazar vasat array kochek tar bood angah paeen array r anegah mikonim.
+
+Flowchart jostejoo do doee ==>
+
+Sol.
+    Beizi(Start)
+       |
+       |
+    Motevaziol azla(Read(A[n]))
+       |
+       |
+    Motevaziol azla(Read(x))
+       |
+       |<-----------------------------------------------------------
+    Mostatil(                                                       |
+    L = 1 ,                                                         |
+    H = n)                                                          |
+       |                                                            |
+       |                                                            |
+    Mostatil(                                                       |
+    mid = [(L + H) / 2])                                            |
+       |                                                            |
+       |                                                            |
+    lozi(                                                           |
+    x > A[mid]) - YES -> Mostatil(L = mid + 1) --------            YES
+       |                                               |            |
+       NO                                              | ==> Lozi(L <= H)-- NO --> Motevaziol azla("Onsor mored nazar peyda nashod") --> Beizi(End)
+       |                                               |                                                                                      ^
+    Lozi(x < A[mid]} - YES -> Mostatil(H = mid - 1) ---                                                                                       |
+       |                                                                                                                                      |
+       NO                                                                                                                                     |
+       |                                                                                                                                      |
+    Motevaziol azla("Onsor Mored nazar dar khane mid gharar darad")---------------------------------------------------------------------------
+
+### Ravesh Moratab sazi dade ha dar array ###
+
+1 - Ravesh moratab sazi hobabi
+2 - Ravesh moratab sazi darja
+3 - Ravesh moratab sazi sari
+4 - Ravesh moratab sazi edghami
+
+## Algorithm Moratab sazi hobabi ( Bubble Sort) ##
+
+1 - Start
+2 - Array A (!Na moratab!) ra az vooroodi begir
+3 - i = n - 1
+4 - j = 1
+
+5 - if A[j] < A[j + 1]:
+5-1 - t = A[j]
+5-2 - A[t] = A[j + 1]
+5-3 - A[j + 1] = t
+
+6 - j = j + 1
+7 - if j <= i goto 5
+8 - i = i - 1
+9 - if i => 1 goto 4
+10 - End
+
+## Algorithm Moratab sazi darja ##
+
+1 - Start
+2 - Array namortab A ra begir
+3 - i = 2
+4 - x = A[i]
+5 - j = i - 1
+
+6 - if A[j] > x then :
+6-1 - A[j + 1] = A[j]
+6-2 - j = j - 1
+6-3 - if j > 0 goto 6
+
+7 - A[j + 1] = x
+8 - i = i + 1
+9 - if i <= n goto 4
+10 - End
